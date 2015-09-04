@@ -1,7 +1,7 @@
 var prepend = "javascript:console.log(\"";
 var append =  "\")";
 
-function changeLinks(prepend, append) {
+function changeLinks() {
   links = document.links;
   
   for (var i = 0; i < links.length; i++) {
@@ -11,7 +11,7 @@ function changeLinks(prepend, append) {
 
 }
 
-function changeLinksBack(prepend, append) {
+function changeLinksBack() {
   links = document.links;
   
   for (var i = 0; i < links.length; i++) {
@@ -24,6 +24,6 @@ function changeLinksBack(prepend, append) {
 
 }
 
-//changeLinks(prepend, append);
-changeLinksBack(prepend, append);
+//changeLinks();
+changeLinksBack();
 
