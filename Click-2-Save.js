@@ -29,16 +29,14 @@ function changeLinksBack() {
 
 function toggleLinks() {
   if ("Click2Save" in this && Click2Save === true) {
-    console.log("Normal browsing behavior restored");
+    changeLinksBack();
 
     Click2Save = false;
   } else {
-    console.log("Clicked links save");
+    changeLinks();
 
     Click2Save = true;
   }
-  //changeLinks();
-  //changeLinksBack();
 
 }
 
