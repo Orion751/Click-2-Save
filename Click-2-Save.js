@@ -24,6 +24,10 @@ function changeLinksBack() {
 
 }
 
-//changeLinks();
-changeLinksBack();
+function toggleLinks() {
+  //changeLinks();
+  changeLinksBack();
 
+}
+
+toggleLinks();
