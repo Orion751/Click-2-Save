@@ -1,12 +1,10 @@
 //TODO Document; See if JavaDoc applies
-//TODO Check style guide for boolean capitalization
 
 var prepend = "javascript:console.log(\"";
 var append =  "\")";
+var links = document.links;
 
 function changeLinks() {
-  links = document.links;
-  
   for (var i = 0; i < links.length; i++) {
     link = links[i];
     link.href = prepend + link.href + append;
@@ -15,11 +13,8 @@ function changeLinks() {
 }
 
 function changeLinksBack() {
-  links = document.links;
-  
   for (var i = 0; i < links.length; i++) {
     link = links[i];
-    //link.href = prepend + link.href + append;
 
     //TODO Ensure that only the begining and end change
     link.href = link.href.replace(prepend, "").replace(append, "");
@@ -28,7 +23,7 @@ function changeLinksBack() {
 }
 
 function toggleLinks() {
-  if ("Click2Save" in this && Click2Save === true) {
+  if ("Click2Save" in this && Click2Save) {
     changeLinksBack();
 
     Click2Save = false;
