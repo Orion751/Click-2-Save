@@ -25,8 +25,13 @@ function changeLinksBack() {
 }
 
 function toggleLinks() {
+  if ("Click2Save" in this) {
+    console.log("Normal browsing behavior restored");
+  } else {
+    console.log("Clicked links save");
+  }
   //changeLinks();
-  changeLinksBack();
+  //changeLinksBack();
 
 }
 
